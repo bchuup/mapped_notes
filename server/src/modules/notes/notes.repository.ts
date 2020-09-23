@@ -1,6 +1,6 @@
 import { Note } from './notes.entity';
 import { EntityRepository, Repository } from 'typeorm';
-import { NoteDto } from './interfaces/notes.dto';
+import { NoteDto } from './interfaces/Note.dto';
 
 @EntityRepository(Note)
 export class NoteRepository extends Repository<Note> {

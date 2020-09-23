@@ -6,9 +6,10 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "migration:generate": "ts-node node_modules/.bin/typeorm migration:generate",
-    "migration:run": "ts-node node_modules/.bin/typeorm migration:run",
-    "migration:revert": "ts-node node_modules/.bin/typeorm migration:revert",
+    "typeorm:cli": "ts-node ./node_modules/typeorm/cli -f ./config/ormconfig.js",
+    "migration:generate": "ts-node node_modules/.bin/typeorm migration:generate -f ./config/ormconfig.js",
+    "migration:run": "ts-node node_modules/.bin/typeorm migration:run -f ./config/ormconfig.js",
+    "migration:revert": "ts-node node_modules/.bin/typeorm migration:revert -f ./config/ormconfig.js",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",

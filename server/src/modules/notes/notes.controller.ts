@@ -1,6 +1,6 @@
 import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { NoteDto } from './interfaces/notes.dto';
+import { NoteDto } from './interfaces/Note.dto';
 import { NoteRepository } from './notes.repository';
 
 @Controller('notes')

@@ -17,8 +17,9 @@ module.exports = {
     jest: true,
   },
   rules: {
+    "sort-imports": "error",
     '@typescript-eslint/interface-name-prefix': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'on',
+    '@typescript-eslint/no-explicit-any': 'on',
   },
 };
